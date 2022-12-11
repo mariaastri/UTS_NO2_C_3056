@@ -12,15 +12,15 @@ package com.mycompany.uts_no2_c_3056;
  * S1SI-05-C
  */
 public class SalariedEmployee_3056 extends Employee_3056 {
-    private double upahMingguan_3056;
+    int upahMingguan_3056;
 
-    public SalariedEmployee_3056(String Nama_3056, String NIP_3056, int Gaji_3056) {
-        super(Nama_3056, NIP_3056, Gaji_3056);
-        this.upahMingguan_3056 = Gaji_3056;
+    public SalariedEmployee_3056(int upahMingguan_3056, String Nama_3056, String NIP_3056) {
+        super(Nama_3056, NIP_3056);
+        this.upahMingguan_3056 = upahMingguan_3056;
     }
-
-    SalariedEmployee_3056(String archie, String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public float Gaji_3056(){
+        return upahMingguan_3056;
     }
     
     public void cetakSalaried_3056(){
